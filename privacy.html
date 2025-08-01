@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | Kokonatsu</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #111;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section {
+      margin-bottom: 1.2rem;
+      border-radius: 8px;
+      background-color: #b9b9b9;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .collapsible {
+      background: none;
+      border: none;
+      padding: 1rem 1.2rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .collapsible::after {
+      content: '+';
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .active::after {
+      content: '–';
+    }
+
+    .content {
+      display: none;
+      padding: 0 1.2rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Privacy Policy</h1>
+
+    <p>
+      At <strong>Kokonatsu</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information.
+    </p>
+
+    <section>
+      <button class="collapsible">1. Information We Collect</button>
+      <div class="content">
+        <ul>
+          <li>Name, email address, phone number, and shipping address.</li>
+          <li>Payment information (processed securely via third-party providers).</li>
+          <li>Website usage data via cookies and analytics tools.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">2. How We Use Your Information</button>
+      <div class="content">
+        <ul>
+          <li>To process your orders and deliver products.</li>
+          <li>To communicate about promotions or updates (only if you opt-in).</li>
+          <li>To improve our website and services.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">3. Sharing of Data</button>
+      <div class="content">
+        <ul>
+          <li>We do not sell or rent your personal information to third parties.</li>
+          <li>We may share information with logistics and payment partners strictly for order fulfillment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">4. Security</button>
+      <div class="content">
+        <p>
+          We implement appropriate security measures to protect your data.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">5. Your Rights</button>
+      <div class="content">
+        <p>
+          You have the right to access, update, or delete your personal information at any time.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">6. Contact Us</button>
+      <div class="content">
+        <p>
+          If you have any questions about this Privacy Policy, please contact us at:<br><br>
+          📧 <a href="mailto:kokonatsuofficial00@gmail.com">kokonatsuofficial00@gmail.com</a><br>
+          📞 <a href="tel:+918714066831">+91 87140 66831</a>
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Kokonatsu. All rights reserved.
+  </footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

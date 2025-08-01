@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Conditions | Kokonatsu</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #111;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section {
+      margin-bottom: 1.2rem;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .collapsible {
+      background: none;
+      border: none;
+      padding: 1rem 1.2rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .collapsible::after {
+      content: '+';
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .active::after {
+      content: '–';
+    }
+
+    .content {
+      display: none;
+      padding: 0 1.2rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Terms and Conditions</h1>
+
+    <p>
+      Welcome to <strong>Kokonatsu</strong>! These terms and conditions outline the rules and regulations for the use of our website and services.
+      By accessing this website, we assume you accept these terms in full.<br><br>
+      <strong>Please do not continue to use our website if you do not accept all of the terms and conditions stated below.</strong>
+    </p>
+
+    <section>
+      <button class="collapsible">1. Products & Orders</button>
+      <div class="content">
+        <ul>
+          <li>Products are described as accurately as possible.</li>
+          <li>Orders are subject to availability and confirmation.</li>
+          <li>Kokonatsu may cancel or refuse any order at our discretion.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">2. Pricing</button>
+      <div class="content">
+        <ul>
+          <li>All prices are in INR (Indian Rupees).</li>
+          <li>Prices may change without prior notice.</li>
+          <li>Shipping costs, if applicable, will be added at checkout.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">3. Returns & Refunds</button>
+      <div class="content">
+        <ul>
+          <li>Products once sold are not returnable unless damaged in delivery.</li>
+          <li>Refunds will be processed based on valid claims at our discretion.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">4. Intellectual Property</button>
+      <div class="content">
+        <p>All content, logos, and images are the property of Kokonatsu and are protected by copyright laws.</p>
+      </div>
+    </section>
+
+    <section>
+      <button class="collapsible">5. Governing Law</button>
+      <div class="content">
+        <p>These terms are governed by and interpreted in accordance with the laws of India.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Kokonatsu. All rights reserved.
+  </footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+
+    collapsibles.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
